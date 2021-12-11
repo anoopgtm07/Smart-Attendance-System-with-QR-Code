@@ -1,0 +1,14 @@
+
+{% extends 'qr_app/base.html' %}
+
+{% block content %}
+
+<h1 class="text-primary login-head"> Login as:</h1>
+<div class="login-section">
+<button type="button" class="btn btn-primary btn-lg"> <a href="{% url 'login' %}">Admin </a></button>
+<button type="button" class="btn btn-primary btn-lg"> <a href="{% url 'login' %}">Lecture </a></button>
+<button type="button" class="btn btn-primary btn-lg"> <a href="{% url 'login' %}">Student </a></button>
+</div>
+
+
+{% endblock %}

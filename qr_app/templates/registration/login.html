@@ -1,0 +1,20 @@
+{% extends 'qr_app/base.html' %}
+{% block title %} Login {% endblock %}
+
+{% block content %}
+{%load static%}
+<link  href="{% static 'qr_app/style.css'  %} " rel="stylesheet">
+
+<h1> Login </h1>
+<br/>
+<div class="form-group">
+    <form method="POST" class="text-secondary">
+        {% csrf_token %}
+        {{ form.as_p}}
+    <button type="button" class="btn btn-success border rounded-3">Sign In</button>
+    <button type="button" class="btn btn-success border rounded-3"><a href='{% url 'register' %}'>Register</a></button>
+</div>
+
+<a class="text-warning">Forgot password?</a>
+
+{% endblock %}

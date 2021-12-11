@@ -1,0 +1,15 @@
+{% extends 'qr_app/base.html' %}
+{% block title %} Register {% endblock %}
+
+{% block content %}
+
+<h1> Register </h1>
+<br/><br/>
+<div class="form-group">
+    <form method="POST" class="text-secondary">
+        {% csrf_token %}
+        {{ form.as_p}}
+    <button class="btn btn-success border rounded-3">Register</button>
+</div>
+<br/><br/>
+{% endblock %}

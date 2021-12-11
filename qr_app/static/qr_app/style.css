@@ -1,0 +1,30 @@
+body{
+    background-color: #A0AECD;;
+}
+.heading-section{
+    background-color: #F62A00;;
+    padding: 0px 10px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.login-head{
+    text-align: center;
+}
+
+.login-section{
+text-align: center;
+font-family: sans-serif;
+margin-top: 20px;
+}
+.jumbotron{
+    background-color: #F1F3CE;
+    margin-top: 0%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}

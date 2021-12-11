@@ -1,0 +1,28 @@
+{% extends 'qr_app/base.html' %}
+
+{% block content %}
+
+    <table class="table table-borderless">
+        <thead class="border-bottom font-weight-bold">
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>URL</td>
+                <td>Image</td>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in queryset %}
+                <tr>
+                    <td>{{item.first_name}}</td>
+                    <td>{{item.last_name}}</td>
+                    <td>{{item.url}}</td>
+                    
+                    <td><img src="{{item.qr_code.url}}" width="200" height="200"></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock content %}
